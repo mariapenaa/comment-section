@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# 💬Interactive comment section
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a solution to the [Interactive comments section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-comments-section-iG1RugEG9). . It was built with React js, using SASS, HTML, JavaScript, and Bootstrap. Firebase was used for user authentication and for database storage. Also, the website is hosted on firebase.
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+- [Author](#author)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 💡The challenge
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Users should be able to:
 
-### `npm test`
+- View the optimal layout for the app depending on their device's screen size
+- Create, Read, Update, and Delete comments
+- Reply to other comments
+- Login and register with an email and password, as well as choose an avatar for their user
+- See how many days/weeks ago the comment was posted
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 📷Screenshot
 
-### `npm run build`
+- Desktop: 
+![](./public/desktop.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Mobile: 
+![](./public/mobile.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 📌Links
 
-### `npm run eject`
+- Live Site URL: [Live site url](https://comment-forum-330c8.web.app/)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📈My process
+First I coded the static design using basic HTML and CSS, with a mobile first workflow. Then I designed the data arquitecture, and I coded the logic that allowed users to comment and edit their text, using firebase database to store the data. After that, I created the login/register page, and used firebase authentication. To finish, I added some restrictions (for instance users can´t reply to their own comments, can´t edit other users comments, etc). 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 🔨Built with
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Semantic HTML5 markup
+- SASS
+- Flexbox
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+- Bootstrap
+- Material UI icons
+- Firebase database
+- Firebase authentication
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 💁🏽‍♀️Author
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<!-- - Website - [Maria Peña](https://www.your-site.com) -->
+- Frontend Mentor - [@mariapenaa](https://www.frontendmentor.io/profile/mariapenaa)

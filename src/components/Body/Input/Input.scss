@@ -1,0 +1,52 @@
+@import '../../../var';
+
+.MuiOutlinedInput-root {
+    border-radius:10px !important;
+}
+
+.MuiFormLabel-root {
+    font-family:$rubik;
+    color:$gBlue
+}
+
+.commentContainer {
+    .imgContainer {
+        margin-top:1.5rem;
+        img {
+            width:auto;
+            border-radius:50%;
+            width:3rem;
+            height:3rem;
+
+        }
+
+    }
+}
+
+.buttonContainerDesktop {
+    display:none;
+}
+
+@media only screen and (min-width: 1180px) {
+    form {
+        flex-direction:row-reverse !important;
+        justify-content:space-around;
+        .buttonContainer {
+            display:none !important;
+        }
+        .buttonContainerDesktop {
+            display:block;
+        }
+        .input {
+            width:80%;
+        }
+        .imgContainer {
+            align-items:flex-start;
+            margin-top:0 !important;
+            img {
+                height:fit-content;
+                width:80%;
+            }
+        }
+    }
+}

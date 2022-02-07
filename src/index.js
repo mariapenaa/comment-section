@@ -2,12 +2,24 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Login from './components/Login/Login'
+import Header from './components/Header/Header'
+import Body from './components/Body/Body'
 import reportWebVitals from './reportWebVitals';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Outlet
+} from "react-router-dom";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <Routes>
+        <Route path="/" element={<Body />} />
+        <Route path="login" element={<Login />} />
+    </Routes>
+  </BrowserRouter>,
   document.getElementById('root')
 );
 

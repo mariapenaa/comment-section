@@ -1,0 +1,165 @@
+@import '../../../var';
+
+
+.block {
+    display:block !important;
+}
+
+.MuiOutlinedInput-multiline {
+    width:100% !important;
+}
+
+.none {
+    display:none !important;
+}
+
+.commentContainer {
+    background-color:white;
+    padding:1rem;
+    width:100%;
+    border-radius:10px;
+    min-height:10vh;
+    img {
+        border-radius:50%;
+        margin-right:1rem;
+    }
+/*     margin-bottom:1.5rem; */
+}
+
+.userName {
+    font-weight:500;
+    font-family:$rubik;
+    font-size:1rem;
+    margin-bottom:0px;
+    margin-right:1rem;
+}
+
+.dateName {
+    margin-bottom:0px;
+    font-weight:400;
+    color:$gBlue;
+    font-size:1rem;
+}
+
+.text {
+    @extend .dateName;
+    text-align:left;
+}
+
+.you {
+    background-color:$mBlue;
+    margin-right:1rem;
+    color:white;
+    font-family:$rubik;
+    margin-bottom:0px;
+    border-radius:3px;
+    padding:0rem 0.5rem;
+}
+
+.actionDiv {
+    display:flex;
+    flex-grow:1.5;
+    flex-direction:row;
+    align-items:flex-start;
+    justify-content: flex-end;
+    p {
+        font-family:$rubik;
+        color:$mBlue;
+        margin-bottom:0;
+    }
+
+    .replyIcon {
+        color:$mBlue;
+    }
+
+    .delete {
+        margin-right:0.5rem;
+        p {
+            color:$sRed;
+        }
+        .replyIcon {
+            color:$sRed;
+        }
+    }
+}
+
+.actionDivDesktop {
+    display:none;
+}
+
+.counter {
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content: space-between;
+    align-items:center;
+    background-color:$vlGray;
+    height:2.5rem;
+    border-radius:10px;
+    padding:0 0.5rem;
+    p {
+        font-family:$rubik;
+        color:$mBlue;
+        margin-bottom:0;
+        text-align:center;
+    }
+    button {
+        background-color:transparent;
+        border:none;
+        color:$lGrayBlue;
+        font-size:1.2rem;
+    }
+}
+
+.counterDesktop {
+    display:none;
+}
+
+.profilePic {
+    width:2.2rem;
+}
+
+.MuiDialog-paper {
+    border-radius:10px;
+}
+
+.MuiDialogActions-root {
+    justify-content:center !important;
+}
+
+#alert-dialog-title {
+    font-family:$rubik;
+}
+
+@media only screen and (min-width: 1180px) {
+    .commentContainer {
+        display:flex;
+        align-items:center;
+        form {
+            width:100%;
+        }
+        img {
+            width:5%;
+        }
+    }
+    .actionDivMobile {
+        display:none !important;
+    }
+
+    .actionDivDesktop {
+        display:flex;
+    }
+
+    .counterDesktop {
+        display:block;
+        margin-right:1rem;
+    }
+
+    .counter {
+        height:100%;
+    }
+
+    .profilePic {
+        width:2.6rem !important;
+    }
+}

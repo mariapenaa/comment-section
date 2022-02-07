@@ -1,0 +1,17 @@
+@import './var';
+
+.mainContainer {
+    background-color:$vlGray;
+}
+
+body {
+    margin:0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.row>* {
+    padding:0px;
+}

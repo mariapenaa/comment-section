@@ -1,0 +1,35 @@
+@import '../../var';
+
+header {
+    width:100%;
+    position:sticky;
+    padding:0 1.5rem;
+    z-index:10;
+    top:0;
+    background-color:$vlGray;
+    height:8vh;
+    display:flex;
+    justify-content: flex-end;
+    align-items:center;
+    ul {
+        margin:0px;
+        display:flex;
+        flex-direction:row;
+        padding:0px;
+        li {
+            list-style:none;
+            display:flex;
+            align-items:center;
+            margin-left:2rem;
+            .person-icon {
+                color:$mBlue;
+                font-size:1.5rem;
+            }
+            p {
+                color:$mBlue;
+                font-family:$rubik;
+                font-size:1rem;
+            }
+        }
+    }
+}
